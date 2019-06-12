@@ -54,9 +54,11 @@ plt.show(fig)
 
 fig = plt.figure(figsize=(20,10))
 for t_class in [1,2,3]:
-    df.Age[df.Pclass == t_class].plot(kind='kde')
+    df.Age[df.Pclass == t_class  ].plot(kind='kde')
 plt.legend(("1era Clase", "2nda Clase", "3era clase"))
 plt.show()
+
+
 
 
 
